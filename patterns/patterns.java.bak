@@ -1,0 +1,51 @@
+class Patterns {
+    public static void main(String[] args) {
+       // System.out.println("Try programiz.pro");
+       int n=5;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                System.out.print("*");
+				//if skip the space after last column of every row
+			    if(j!=n-1)
+                System.out.print("_");
+            }
+            System.out.println();
+        }
+    }
+}
+
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * *
+-----------------------------------
+class Patterns {
+    public static void main(String[] args) {
+       // System.out.println("Try programiz.pro");
+       int rows=5;
+       int cols=5;
+        for(int i=0;i<rows;i++)
+        {
+            for(int j=0;j<cols;j++)
+            {
+                if(i==0 || j==0 || j==cols-1 || i==rows-1)
+                System.out.print("*");
+                //if(j!=cols-1)
+                else
+               System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+*****
+*   *
+*   *
+*   *
+*****
+---------------------------------------------------
+
