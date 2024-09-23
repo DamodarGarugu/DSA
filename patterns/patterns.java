@@ -110,5 +110,34 @@ class Patterns {
 *********
 ------------------------------------------------
 
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
 
+class Patterns {
+    public static void main(String[] args) {
+       // System.out.println("Try programiz.pro");
+
+       int n=5;
+        for(int i=n;i>=1;i--)
+        {
+            for(int gap=1;gap<n-i+1;gap++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<i*2-1;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+*********
+ *******
+  *****
+   ***
+    *
+	
+----------------------------------------------------------------
  
